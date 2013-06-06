@@ -20,13 +20,16 @@ package net.floodlightcontroller.core.internal;
 import java.util.List;
 
 import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.map.annotate.JsonSerialize;
 import org.openflow.protocol.statistics.OFDescriptionStatistics;
 
 import net.floodlightcontroller.core.OFSwitchBase;
+import net.floodlightcontroller.core.web.serializers.OFSwitchImplJSONSerializer;
 
 /**
  * This is the internal representation of an openflow switch.
  */
+@JsonSerialize(using=OFSwitchImplJSONSerializer.class)
 public class OFSwitchImpl extends OFSwitchBase {
     
     @Override

@@ -27,3 +27,6 @@ net.floodlightcontroller.core.test.MockFloodlightProvider
 net.floodlightcontroller.core.test.MockThreadPoolService
 net.floodlightcontroller.firewall.Firewall
 net.floodlightcontroller.loadbalancer.LoadBalancer
+net.floodlightcontrollerprintln.netfloodlightcontrollerprintln
+net.floodlightcontroller.mactracker.MACTracker
+net.floodlightcontroller.headerextract.HeaderExtract
